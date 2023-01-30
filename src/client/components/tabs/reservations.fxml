@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import server.components.Tab?>
+<?import server.components.table.Table?>
+<?import server.components.table.Column?>
+<?import server.components.table.ActionColumn?>
+
+<?import server.components.form.Form?>
+<?import server.components.form.Block?>
+<?import server.components.form.fields.TextField?>
+<?import server.components.form.fields.ChoiceBox?>
+
+
+<fx:root type="Tab" label="Reservations" icon="icons/reservation.png" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <table>
+        <Table fx:id="table" >
+            <Column label="Room No." key="roomId"/>
+            <Column label="Guest Id" key="guestId"/>
+            <Column label="No. of Nights" key="nights"/>
+            <Column label="Price / Night" key="pricePerNight"/>
+            <ActionColumn fx:id="actions" />
+        </Table>
+    </table>
+    <form>
+        <Form fx:id="form" minWidth="400" style="-fx-padding: 0 20 0 0 ">
+            <Block label="New Room">
+                <VBox spacing="10">
+                    <HBox spacing="10">
+                        <ChoiceBox fx:id="roomsField" label="Room" />
+                        <ChoiceBox fx:id="guestsField" label="Guest" />
+                    </HBox>
+                    <HBox spacing="10">
+                        <TextField fx:id="nightsField" label="Nights" styleClass="input-field-150" />
+                        <TextField fx:id="pricePerNightField" label="Price / Night" styleClass="input-field-150" />
+                    </HBox>
+                    <HBox spacing="10">
+                        <Label fx:id="selectedRoomField" />
+                        <Label fx:id="selectedGuestField" />
+                    </HBox>
+                </VBox>
+            </Block>
+        </Form>
+    </form>
+</fx:root>

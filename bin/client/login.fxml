@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import server.components.form.Form?>
+<?import server.components.form.Block?>
+<?import server.components.form.fields.TextField?>
+<?import server.components.form.fields.ChoiceBox?>
+<?import server.components.form.fields.PasswordField?>
+
+<AnchorPane fx:controller="server.Login" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" spacing="70">
+               <children>
+                  <ImageView fitHeight="130" fitWidth="130" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon.png" />
+                     </image>
+                  </ImageView>
+
+                  <Form fx:id="form">
+                     <Block>
+                        <TextField fx:id="usernameField" label="Username" />
+                        <PasswordField fx:id="passwordField" label="Password" />
+                        <ChoiceBox fx:id="adminsField" label="Title" styleClass="choice-box-300" />
+                     </Block>
+                  </Form>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

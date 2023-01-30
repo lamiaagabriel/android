@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import server.components.Tab?>
+<?import server.components.table.Table?>
+<?import server.components.table.Column?>
+<?import server.components.form.Form?>
+<?import server.components.form.Block?>
+<?import server.components.form.TextField?>
+<?import server.components.form.ChoiceBox?>
+<?import server.components.form.PasswordField?>
+
+
+<fx:root type="Tab" label="Transaction" icon="icons/transaction.png" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <table>
+        <Table>
+            <Column label="Full Name" key="name"/>
+            <Column label="Email" key="email"/>
+            <Column label="Gender" key="gender"/>
+            <Column label="Address" key="address"/>
+            <Column label="Card">
+                <Column label="Name" key="name"/>
+                <Column label="Number" key="number"/>
+                <Column label="Type" key="type"/>
+            </Column>
+        </Table>
+    </table>
+    <form>
+        <Form>
+            <Block label="Personal Information">
+                <TextField label="Full Name" />
+                <TextField label="Username" />
+            </Block>
+            <Block label="Payment Method">
+                <TextField label="Full Name" />
+                <TextField label="Username" />
+            </Block>
+        </Form>
+    </form>
+</fx:root>

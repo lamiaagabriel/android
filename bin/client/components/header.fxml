@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import server.components.ActionButton?>
+
+<fx:root type="BorderPane" styleClass="header" stylesheets="@../../assets/css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="label" text="Dashboard" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <HBox styleClass="user-info" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="name" />
+                  <Label fx:id="username" styleClass="username" />
+                  <Label fx:id="title" styleClass="title" />
+               </children>
+            </VBox>
+            <ActionButton fx:id="logout" icon="logout" rotate="180"/>
+         </children>
+      </HBox>
+   </right>
+</fx:root>

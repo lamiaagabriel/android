@@ -1,0 +1,256 @@
+/* 
+    - #3A4F7A
+    - #FFC6D3
+    - #FEA1BF
+    - #E98EAD
+    - #F7F5EB
+    - #EAE0DA
+
+
+    #674188
+    #C3ACD0
+    #F7EFE5
+    #FFFBF5
+*/
+.root {
+    -fx-font-size: 17;
+    -fx-text-fill: #444444;
+    -fx-background-color: white;
+}
+
+/* ------------------------------ Header */
+.header {
+    -fx-font-weight: 700;
+    -fx-font-size: 35;
+    -fx-padding: 10 20;
+}
+.header .user-info {
+    -fx-font-size: 17;
+    -fx-font-weight: 600;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+}
+.header .user-info .username, .user-info .title {
+    -fx-font-size: 12;
+    -fx-text-fill: #949494;
+}
+.header .button {
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-font-size: 25;
+    -fx-font-weight: 900;
+    -fx-padding: 5 8;
+    -fx-text-fill: #004085;
+    -fx-background-color: #cce5ff;
+    -fx-border-color: #b8daff;
+}
+
+/* ------------------------------ Content */
+.content-container {
+    -fx-padding: 0 20;
+}
+
+/* ------------------------------ InputField */
+.input-field {
+    -fx-font-size: 14;
+    -fx-min-width: 300;
+}
+.input-field-150 {
+    -fx-font-size: 14;
+    -fx-min-width: 150;
+}
+
+/* ------------------------------ Buttons */
+.button {
+    -fx-cursor: hand;
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 1 1 1 1;
+    -fx-background-radius: 0;
+}
+.button:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+    -fx-background-insets: 0, 1 1 1 1;
+}
+
+/* -------------------------------------- Text Actions */
+.success-text {
+    -fx-font-size: 12;
+    -fx-text-fill: #38E54D;
+}
+
+.warning-text {
+    -fx-font-size: 12;
+    -fx-text-fill: #FF8B13;
+}
+
+.danger-text {
+    -fx-font-size: 12;
+    -fx-text-fill: #FF1E1E;
+}
+/* ------------------------------ TextField */
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+/* ------------------------------ ChoiceBox */
+.choice-box-container {
+    -fx-min-width: 180;
+    -fx-pre-width: 180;
+    -fx-max-width: 180;
+}
+.choice-box {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+.choice-box:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+.choice-box-container .choice-box {
+    -fx-min-width: 180;
+    -fx-pre-width: 180;
+    -fx-max-width: 180;
+}
+.choice-box-container .choice-box .context-menu {
+    -fx-min-width: 180;
+    -fx-pre-width: 180;
+    -fx-max-width: 180;
+}
+
+/* Another Width */
+.choice-box-300 .choice-box {
+    -fx-min-width: 300;
+    -fx-pre-width: 300;
+    -fx-max-width: 300;
+}
+
+.choice-box-300 .choice-box .context-menu {
+    -fx-min-width: 300;
+    -fx-pre-width: 300;
+    -fx-max-width: 300;
+}
+
+/* ------------------------------ DatePicker */
+.date-picker {
+    -fx-min-width: 300;
+    -fx-pre-width: 300;
+    -fx-max-width: 300;
+}
+/* Another Width */
+.date-picker-180 {
+    -fx-min-width: 180;
+    -fx-pre-width: 180;
+    -fx-max-width: 180;
+}
+
+
+/* -------------------------------------- Tab Pane */
+.tab {
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-border-color: transparent;
+    -fx-border-width: 2 0 0 0;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    /* -fx-border-color: #dedede; */
+    -fx-background-color: #cce5ff;
+    /* -fx-border-width: 0 0 1 0; */
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #2194ffa8;
+    -fx-opacity: 0.7;
+    -fx-font-weight: bold;
+}
+
+.tab:selected {
+    /* -fx-border-color: black; */
+    -fx-opacity: 1;
+    -fx-border-color: #2192FF;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #2192FF;
+    -fx-opacity: 1;
+    /* -fx-text-fill: black; */
+}
+
+.tab-pane:focused>.tab-header-area>.headers-region>.tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+/* -------------------------------------- TableView */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    /* -fx-border-color: black; */
+    -fx-border-color: rgba(#2192FF, 0.2);
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(0, 0, 0, 0.2);
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    /* -fx-border-color: rgba(0, 0, 0, 0.2); */
+    -fx-border-width: 0 1 1 0;
+}
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, transparent;
+}
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, transparent;
+}
+.table-row-cell:selected {
+    -fx-background-color: transparent;
+}
+.table-view>.virtual-flow>.scroll-bar:vertical,
+.table-view>.virtual-flow>.scroll-bar:vertical>.track,
+.table-view>.virtual-flow>.scroll-bar:vertical>.track-background,
+.table-view>.virtual-flow>.scroll-bar:horizontal,
+.table-view>.virtual-flow>.scroll-bar:horizontal>.track,
+.table-view>.virtual-flow>.scroll-bar:horizontal>.track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view>.virtual-flow>.scroll-bar>.increment-button,
+.table-view>.virtual-flow>.scroll-bar>.decrement-button {
+    -fx-opacity: 0;
+}

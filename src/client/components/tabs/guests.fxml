@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import server.components.Tab?>
+<?import server.components.table.Table?>
+<?import server.components.table.Column?>
+<?import server.components.table.ActionColumn?>
+
+<?import server.components.form.Form?>
+<?import server.components.form.Block?>
+<?import server.components.form.fields.TextField?>
+<?import server.components.form.fields.ChoiceBox?>
+<?import server.components.form.fields.DatePicker?>
+
+<fx:root type="Tab" label="Guests" icon="icons/guests.png" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <table>
+        <Table fx:id="table">
+            <Column label="Full Name" key="name"/>
+            <Column label="Email" key="email"/>
+            <Column label="Gender" key="gender"/>
+            <Column label="Phone Number" key="phone"/>
+            <Column label="Address">
+                <Column label="Country" key="country"/>
+                <Column label="City" key="city"/>
+            </Column>
+            <ActionColumn fx:id="actions" />
+        </Table>
+    </table>
+    <form>
+        <Form fx:id="form">
+            <Block label="Personal Information">
+                <HBox spacing="10">
+                    <TextField fx:id="nameField" label="Full Name" />
+                    <ChoiceBox fx:id="genderField" label="Gender"  />
+                </HBox>
+                <HBox spacing="10">
+                    <TextField fx:id="emailField" label="Email" />
+                    <ChoiceBox fx:id="countryField" label="Country" />
+                </HBox>
+                <HBox spacing="10">
+                    <TextField fx:id="phoneField" label="Phone Number" />
+                    <ChoiceBox fx:id="cityField" label="City" />
+                </HBox>
+            </Block>
+            <!-- <Block label="Payment Method">
+                <TextField fx:id="cardNameField" label="Card Name" />
+                <TextField fx:id="cardNumberField" label="Card Number" />
+                <DatePicker fx:id="cardExpField" label="Expire Date" />
+            </Block> -->
+        </Form>
+    </form>
+</fx:root>

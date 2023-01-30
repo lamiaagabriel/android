@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import server.components.Tab?>
+<?import server.components.table.Table?>
+<?import server.components.table.Column?>
+<?import server.components.table.ActionColumn?>
+
+<?import server.components.form.Form?>
+<?import server.components.form.Block?>
+<?import server.components.form.fields.TextField?>
+<?import server.components.form.fields.ChoiceBox?>
+
+
+<fx:root type="Tab" label="Rooms" icon="icons/navigation-toolbar.png" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <table>
+        <Table fx:id="table" minWidth="600">
+            <Column label="Room No." key="num"/>
+            <Column label="Packages" key="packg"/>
+            <Column label="Type" key="type"/>
+            <ActionColumn fx:id="actions" />
+        </Table>
+    </table>
+    <form>
+        <Form fx:id="form" minWidth="320" style="-fx-padding: 0 20 0 0 ">
+            <Block label="New Room">
+                <VBox spacing="10">
+                    <TextField fx:id="numberField" label="Room No." />
+                    <ChoiceBox fx:id="packagesField" label="Package" styleClass="choice-box-300" />
+                    <ChoiceBox fx:id="typesField" label="Type" styleClass="choice-box-300"  />
+                </VBox>
+            </Block>
+        </Form>
+    </form>
+</fx:root>
